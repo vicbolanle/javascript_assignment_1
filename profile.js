@@ -5,7 +5,7 @@ lastName = "Bolanle";
 email = "bolanlevictor80@gmail.com";
 Age = 25;
 Gender = "Male";
-Job title = "corper";
+Ocupation = "corper";
 
 console.log(firstName);
 

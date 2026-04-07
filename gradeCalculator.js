@@ -1,22 +1,27 @@
-// Grade Calculator
-let scores = [80, 60, 85, 45, 55, 50, 63, 49, 22, 30];
+function getGrade(score) {
+  if (score < 0 || score > 100) {
+    return "Invalid input";
+  }
 
-for (let i = 0; i < scores.length; i++) {
-    let score = scores[i];
-    let letterGrade = '';
+  let grades;
 
-    if (score >= 70) {
-        letterGrade = 'A';
-    } else if (score >= 60) {
-        letterGrade = 'B';
-    } else if (score >= 50) {
-        letterGrade = 'C';
-    } else if (score >= 40) {
-        letterGrade = 'D';
-    } else {
-        letterGrade = 'F';
-    }
+  if (score >= 70) {
+    grades = "A";
+  } else if (score >= 60) {
+    grades = "B";
+  } else if (score >= 50) {
+    grades = "C";
+  } else if (score >= 40) {
+    grades = "D";
+  } else {
+    grades = "F";
+  }
 
-    let result = `Score: ${score} → Grade: ${letterGrade}`;
-    console.log(result);
+  return grades;
 }
+
+// Usage
+console.log(getGrade(85));
+console.log(getGrade(32));
+console.log(getGrade(22));
+console.log(getGrade(59));

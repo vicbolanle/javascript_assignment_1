@@ -1,0 +1,1 @@
+//This entails the Assignment of Javascript (Part 1)
